@@ -1,0 +1,17 @@
+<h1>Question#answer</h1>
+
+<p><%= @answer %></p>
+<p> - YOU </p>
+
+<% if @answer == "I am going to work"  %>
+  <%= "Great!" %>
+<% elsif @answer[-1] == "?" %>
+  <%= "Silly question, get dressed and go to work!" %>
+<% else %>
+  <%= "I don't care, get dressed and go to work!" %>
+<% end %>
+<p> - The Coach </p>
+<p>
+  <%= link_to "Ask a new question", ask_path %>
+</p>
+
